@@ -1,67 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bhargav Nadh Enukoti | Data Scientist</title>
 
+<!-- Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
+
+/* ---------- GLOBAL ---------- */
+
 body{
-  margin:0;
-  font-family:Segoe UI, sans-serif;
-  background:#0b1120;
-  color:white;
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#060b1a;
+color:white;
 }
 
 section{
-  padding:80px 12%;
+padding:100px 10%;
 }
 
 h1,h2{
-  color:#38bdf8;
+color:#e5e7eb;
+margin-bottom:25px;
 }
+
+p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+/* ---------- HERO ---------- */
 
 .hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  background:linear-gradient(#020617,#0b1120);
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+url("https://images.unsplash.com/photo-1551288049-bebda4e38f71");
+
+background-size:cover;
+background-position:center;
 }
 
-.button{
-  background:#38bdf8;
-  color:black;
-  padding:12px 20px;
-  margin:10px;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:bold;
+.hero h1{
+font-size:48px;
 }
+
+.btn{
+background:#38bdf8;
+color:black;
+padding:12px 22px;
+border-radius:6px;
+text-decoration:none;
+margin:10px;
+font-weight:600;
+display:inline-block;
+}
+
+/* ---------- SUMMARY BACKGROUND ---------- */
+
+.summary-bg{
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+url("https://images.unsplash.com/photo-1518779578993-ec3579fee39f");
+
+background-size:cover;
+background-position:center;
+text-align:center;
+}
+
+.summary-card{
+background:rgba(255,255,255,0.85);
+color:black;
+max-width:600px;
+margin:auto;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ---------- GRID ---------- */
 
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
 }
 
+/* ---------- CARDS ---------- */
+
 .card{
-  background:#1e293b;
-  padding:25px;
-  border-radius:12px;
-  transition:0.3s;
+background:rgba(255,255,255,0.06);
+backdrop-filter:blur(8px);
+border:1px solid rgba(255,255,255,0.15);
+padding:25px;
+border-radius:12px;
+transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+transform:translateY(-6px);
+background:rgba(255,255,255,0.1);
 }
 
-.stat{
-  font-size:40px;
-  font-weight:bold;
-  color:#38bdf8;
+/* ---------- ICON STYLE ---------- */
+
+.icon{
+font-size:22px;
+background:#e5e7eb;
+color:black;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
 }
+
+/* ---------- SKILLS BACKGROUND ---------- */
+
+.skills-bg{
+background:linear-gradient(90deg,#1f1f25,#2a2a35);
+}
+
+/* ---------- WORKFLOW ---------- */
+
+.workflow{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+gap:20px;
+text-align:center;
+}
+
+.circle{
+width:70px;
+height:70px;
+border-radius:50%;
+background:#1e293b;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-size:26px;
+color:#38bdf8;
+}
+
+/* ---------- STATS ---------- */
+
+.stat{
+font-size:42px;
+color:#38bdf8;
+font-weight:bold;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+color:#94a3b8;
+}
+
 </style>
 </head>
 
@@ -72,43 +188,54 @@ h1,h2{
 <h1>Bhargav Nadh Enukoti</h1>
 <p>Data Scientist | Machine Learning & Advanced Analytics | Python & SQL | Cloud Platforms</p>
 
-<a class="button" href="mailto:ebhargavnadh@gmail.com">Email Me</a>
-<a class="button" href="https://linkedin.com/in/bhargavnadh-enukoti-759162349" target="_blank">LinkedIn</a>
+<a class="btn" href="mailto:ebhargavnadh@gmail.com">Get in Touch</a>
+<a class="btn" href="https://linkedin.com/in/bhargavnadh-enukoti-759162349" target="_blank">LinkedIn Profile</a>
 </section>
 
 <!-- SUMMARY -->
-<section>
+<section class="summary-bg">
 <h2>Professional Summary</h2>
-<div class="card">
-Data Scientist experienced in end-to-end analytics including data cleaning,
-feature engineering, modeling, deployment, and visualization. Currently
-pursuing MSc Data Science at University of Greenwich.
+
+<div class="summary-card">
+<h3>2+ Years Experience</h3>
+<p>
+Building data-driven solutions with machine learning and advanced analytics.
+Experienced in end-to-end analytics from data cleaning to deployment.
+</p>
 </div>
 </section>
 
-<!-- SKILLS -->
-<section>
+<!-- CORE SKILLS -->
+<section class="skills-bg">
 <h2>Core Technical Skills</h2>
-<div class="grid">
-<div class="card">Data Visualization</div>
-<div class="card">Data Modeling</div>
-<div class="card">Big Data Processing</div>
-</div>
-</section>
 
-<!-- TECH EXPERTISE -->
-<section>
-<h2>Technical Expertise</h2>
 <div class="grid">
-<div class="card"><b>Python & SQL</b><br>Machine learning & analytics</div>
-<div class="card"><b>Databricks</b><br>Scalable data pipelines</div>
-<div class="card"><b>AWS & Azure</b><br>Cloud deployment</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+<h3>Data Visualization</h3>
+<p>Creating compelling visual stories from complex datasets.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-database"></i></div>
+<h3>Data Modeling</h3>
+<p>Designing predictive models for business solutions.</p>
+</div>
+
+<div class="card">
+<div class="icon"><i class="fa-solid fa-cloud"></i></div>
+<h3>Big Data</h3>
+<p>Processing large datasets using modern cloud tools.</p>
+</div>
+
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section>
 <h2>Professional Experience</h2>
+
 <div class="card">
 <h3>Custom Software Analyst — Accenture</h3>
 <p>Dec 2022 – Dec 2024</p>
@@ -120,17 +247,53 @@ pursuing MSc Data Science at University of Greenwich.
 </div>
 </section>
 
+<!-- WORKFLOW -->
+<section>
+<h2>Data Science Workflow</h2>
+
+<div class="workflow">
+
+<div>
+<div class="circle"><i class="fa-solid fa-database"></i></div>
+<p>Data Collection</p>
+</div>
+
+<div>
+<div class="circle"><i class="fa-solid fa-broom"></i></div>
+<p>Data Cleaning</p>
+</div>
+
+<div>
+<div class="circle"><i class="fa-solid fa-sliders"></i></div>
+<p>Feature Engineering</p>
+</div>
+
+<div>
+<div class="circle"><i class="fa-solid fa-brain"></i></div>
+<p>Model Building</p>
+</div>
+
+<div>
+<div class="circle"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+<p>Deployment</p>
+</div>
+
+</div>
+</section>
+
 <!-- EDUCATION -->
 <section>
 <h2>Education</h2>
+
 <div class="grid">
 <div class="card">
-<b>MSc Data Science</b><br>
-University of Greenwich (2025–2026)
+<h3>MSc Data Science</h3>
+<p>University of Greenwich (2025–2026)</p>
 </div>
 
 <div class="card">
-<b>BSc Electrical & Electronics Engineering</b>
+<h3>BSc Electrical & Electronics Engineering</h3>
+<p>R.M.D Engineering College</p>
 </div>
 </div>
 </section>
@@ -138,6 +301,7 @@ University of Greenwich (2025–2026)
 <!-- IMPACT -->
 <section>
 <h2>Professional Impact</h2>
+
 <div class="grid">
 <div class="card"><div class="stat">2+</div>Years Experience</div>
 <div class="card"><div class="stat">100%</div>End-to-End Analytics</div>
@@ -148,12 +312,18 @@ University of Greenwich (2025–2026)
 <!-- CONTACT -->
 <section>
 <h2>Let's Connect</h2>
+
 <div class="card">
 📍 Hounslow, United Kingdom<br><br>
 📧 ebhargavnadh@gmail.com<br><br>
-Open to Data Science & Analytics opportunities.
+Open to opportunities in Data Science & Analytics.
 </div>
+
 </section>
+
+<footer>
+© 2026 Bhargav Nadh Enukoti — Portfolio
+</footer>
 
 </body>
 </html>
